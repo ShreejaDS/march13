@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+     <test  name="Win7GC">
+  <parameter name="b" value="chrome"/>
+ 
+  <parameter name="ip" value="192.168.100.1"/>
+ 
+    <packages>
+      <package name="script"/>
+    </packages>
+    </test> <!-- Test -->
+     
+</suite> <!-- Suite -->

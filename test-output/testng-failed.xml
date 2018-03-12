@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Win7GC(failed)">
+    <parameter name="b" value="chrome"/>
+    <parameter name="ip" value="192.168.100.1"/>
+    <classes>
+      <class name="script.InvalidLogin">
+        <methods>
+          <include name="testInvalidLogin"/>
+          <include name="closeApp"/>
+          <include name="openApp"/>
+        </methods>
+      </class> <!-- script.InvalidLogin -->
+      <class name="script.CheckProductVersion">
+        <methods>
+          <include name="closeApp"/>
+          <include name="testProductVersion"/>
+          <include name="openApp"/>
+        </methods>
+      </class> <!-- script.CheckProductVersion -->
+    </classes>
+  </test> <!-- Win7GC(failed) -->
+</suite> <!-- Failed suite [Suite] -->
